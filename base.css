@@ -1,3 +1,54 @@
-.navy-text {
-color: #1D27CA;
+:root {
+--white: #fff;
+--black: #000000;
+---purple: #4C5FD5;
+--lavender: #dadbf1;
+}
+
+.black-text {
+color: var(--black);
+}
+
+.purple-button {
+    padding: 6px 32px;
+    font-family: "GT America Standard", serif;
+    font-size: calc(20px - 2px);
+    line-height: 1.5;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 0;
+    border: 1px solid transparent;
+    background-image: none;
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 400;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    border-radius: 8px;
+    background-color: var(---purple);
+    color: var(--white);
+}
+
+.purple-button:hover {
+    background-color: var(---white);
+    color: var(--black);
+}
+
+.list-link {
+color: var(--purple);
+line-height: 28px;
+font-size: 20px;
+text-decoration: none;
+}
+
+.list-link:hover {
+text-decoration: underline;
 }
