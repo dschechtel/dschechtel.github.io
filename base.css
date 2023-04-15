@@ -39,9 +39,41 @@ color: var(--black);
 }
 
 .purple-button:hover {
-    background-color: var(---white);
+    background-color: var(--white);
     color: var(--black);
 }
+
+.transparent-button {
+    padding: 6px 32px;
+    font-family: serif;
+    font-size: calc(20px - 2px);
+    line-height: 1.5;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 0;
+    background-image: none;
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 400;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+/*.transparent-button:hover {
+    background-color: var(---white);
+    color: var(--black);
+} */
 
 /* -- Link Styles -- */
 .list-link {
@@ -115,6 +147,8 @@ order: 2;
 .hero-container {
     padding-top: 80px;
     padding-bottom: 115px;
+    display: flex;
+    justify-content: center;
 }
 
 .hero-container-inner {
