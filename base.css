@@ -112,7 +112,29 @@ svg:not(:root) {
 order: 2;
 }
 
+.hero-container {
+    padding-top: 80px;
+    padding-bottom: 115px;
+}
+
+.hero-container-inner {
+    position: relative;
+    z-index: 2;
+    max-width: 720px;
+}
+
+.hero-title {
+    font-family: sans-serif;
+    color: var(--black);
+    font-size: 80px;
+    letter-spacing: -4px;
+    line-height: 76ox;
+    font-weight: 400;
+    margin: 0 0 1rem;
+}
 .main-search {
     border: 1px solid var(--black);
     border-radius: 5px;
+    height: 12vh;
+    width: 50%;
 }
