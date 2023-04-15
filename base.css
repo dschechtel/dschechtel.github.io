@@ -9,6 +9,7 @@
 color: var(--black);
 }
 
+/* -- Buttons -- */
 .purple-button {
     padding: 6px 32px;
     font-family: "GT America Standard", serif;
@@ -42,6 +43,7 @@ color: var(--black);
     color: var(--black);
 }
 
+/* -- Link Styles -- */
 .list-link {
 color: var(--purple);
 line-height: 28px;
@@ -51,4 +53,66 @@ text-decoration: none;
 
 .list-link:hover {
 text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+/* -- Top Bar -- */
+.topbar {
+position: relative;
+top: 0;
+left: 0;
+z-index: 3;
+background-color: var(--black);
+color: var(--white);
+display: flex;
+flex-direction: row;
+}
+
+.topbar__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.topbar__logo-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.topbar__logo {
+    transition: opacity 150mx ease-in-out;
+}
+
+.topbar__helpcenter {
+    display: inline-block;
+    margin: 4px 0 0 0.8rem;
+    vertical-align: middle;
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: -0.5px;
+    padding: 2px 0 4px 0.8rem;
+    border-left: 2px solid var(--white);
+    transition: all .3s;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+.topbar__buttons {
+order: 2;
+}
+
+.main-search {
+    border: 1px solid var(--black);
+    border-radius: 5px;
 }
